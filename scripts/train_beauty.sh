@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=0 python src/pretrain.py \
+--data_dir data/beauty \
+--model_name t5-small \
+--batch_size 64 \
+--cuda \
+--checkpoint out/beauty/ \
+--epochs 30 \
+--prompt_num 20 \
+--prompt_length 3 \
+--num_heads 4 \
+--seed 1 \
+--wandb_name beauty_20x3_module_multihead_4_seed_1 \
+--out_file beauty_20x3_module_multihead_4_seed_1.pt

@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=0 python src/pretrain.py \
+--data_dir data/toys \
+--model_name t5-small \
+--batch_size 64 \
+--cuda \
+--checkpoint out/toys/ \
+--epochs 30 \
+--prompt_num 10 \
+--prompt_length 3 \
+--num_heads 4 \
+--seed 1 \
+--wandb_name toys_10x3_module_multihead_4_seed_1 \
+--out_file toys_10x3_module_multihead_4_seed_1.pt
